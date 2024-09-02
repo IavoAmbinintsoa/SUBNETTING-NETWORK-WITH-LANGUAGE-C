@@ -13,7 +13,7 @@ Ce programme Python permet de découper un réseau IP en sous-réseaux plus peti
 
 ## Installation
 
-1. view le dépôt :
+1. lien de dépôt :
     ```bash
     https://github.com/IavoAmbinintsoa/SUBNETTING-NETWORK-WITH-LANGUAGE-C/edit/main/README.md
     ```
