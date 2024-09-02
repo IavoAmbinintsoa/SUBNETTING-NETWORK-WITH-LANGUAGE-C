@@ -27,7 +27,7 @@ Ce programme Python permet de découper un réseau IP en sous-réseaux plus peti
 
 1. compiler :
     ```bash
-    gcc *.c -o subnet
+    gcc *.c -o subnet -lm
     ```
     ```bash
     ./subnet
