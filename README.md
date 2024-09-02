@@ -19,7 +19,7 @@ Ce programme Python permet de découper un réseau IP en sous-réseaux plus peti
     ```
 2. Accède au répertoire du projet :
     ```bash
-    cd ton-repository
+    cd subnetting
     ```
     ```
 
