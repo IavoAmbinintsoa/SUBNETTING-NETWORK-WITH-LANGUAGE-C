@@ -13,9 +13,9 @@ Ce programme Python permet de découper un réseau IP en sous-réseaux plus peti
 
 ## Installation
 
-1. Clone le dépôt :
+1. view le dépôt :
     ```bash
-    git clone https://github.com/ton-utilisateur/ton-repository.git
+    https://github.com/IavoAmbinintsoa/SUBNETTING-NETWORK-WITH-LANGUAGE-C/edit/main/README.md
     ```
 2. Accède au répertoire du projet :
     ```bash
