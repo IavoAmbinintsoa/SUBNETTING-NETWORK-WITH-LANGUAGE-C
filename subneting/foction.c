@@ -5,6 +5,8 @@ void divisionSR(char *IP,int netmask) {
     int decoupage;
     unsigned int ip, subnet_size;
     unsigned int i, network, broadcast;
+    char *IPReseau;
+    char *Broad;
     int tempnetmask = netmask;
     int new_prefix_length;
     int subnet_count;
@@ -26,8 +28,8 @@ void divisionSR(char *IP,int netmask) {
     for (i = 0; i < subnet_count; i++) {
         network = (ip & netmask) + (i * subnet_size);
         broadcast = network + subnet_size - 1;
-        char *IPReseau = charIp(network);
-        char *Broad = charIp(broadcast);
+        IPReseau = charIp(network);
+        Broad = charIp(broadcast);
         printf("[%d) %20s | %22s]\n",i+2,IPReseau,Broad);
     }
 }
@@ -40,14 +42,13 @@ unsigned int int_Ip(char *IP)
     sscanf(IP,"%u.%u.%u.%u",&octect1,&octect2,&octect3,&octect4);
     return (octect1 << 24) | (octect2 << 16) | (octect3 << 8) | octect4;
 }
-char *charIp(int ip)
-{
-    char *IP = malloc(sizeof(char)*32);
-    unsigned int octect1 = ip/pow(256,3),
-        octect2 = ip/pow(256,2),
-        octect3 = ip/256,
-        octect4 = ip;
-    sprintf(IP,"%d.%d.%d.%d",octect1%256,octect2%256,octect3%256,octect4%256);
+char *charIp(int ip) {
+        char *IP = malloc(sizeof(char)*32);
+    int octect1 = (ip >> 24) & 0xFF,
+        octect2 = (ip >> 16) & 0xFF,
+        octect3 = (ip >> 8) & 0xFF,
+        octect4 = ip & 0xFF;
+    sprintf(IP,"%d.%d.%d.%d",octect1,octect2,octect3,octect4);
     return IP;
 }
 //-------------------//
