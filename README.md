@@ -3,7 +3,7 @@
 
 ## Description
 
-Ce programme Python permet de découper un réseau IP en sous-réseaux plus petits et d'afficher les informations essentielles sur chacun d'eux. Il prend une adresse IP avec un masque de sous-réseau en entrée et fournit des détails sur l'adresse réseau, l'adresse de broadcast, le nombre d'hôtes, et les sous-réseaux découpés.
+Ce programme en langage C permet de découper un réseau IP en sous-réseaux plus petits et d'afficher les informations essentielles sur chacun d'eux. Il prend une adresse IP avec un masque de sous-réseau en entrée et fournit des détails sur l'adresse réseau, l'adresse de broadcast, le nombre d'hôtes, et les sous-réseaux découpés.
 
 ## Fonctionnalités
 
